@@ -10,5 +10,5 @@ Portfólio DEV Front End
 
 :package: new functionaly
 :up: update
-:beatle: bug fixing
+:bug: bug fixing
 :checkered_flag: release
