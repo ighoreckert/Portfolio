@@ -8,7 +8,7 @@ Portfólio DEV Front End
 
 ## Icones
 
-:package: new functionaly
-:up: update
-:bug: bug fixing
-:checkered_flag: release
+- :package: new functionaly
+- :up: update
+- :beetle: bug fixing
+- :checkered_flag: release
