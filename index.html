@@ -36,7 +36,7 @@
       </div>
       <!--burguer-->
 
-      <header>
+      <header id="home">
         <div class="img-wrapper">
           <img src="images/bg-header1.jpg" alt="" />
         </div>
@@ -52,21 +52,25 @@
       <aside class="sidebar">
         <nav>
           <ul class="menu">
-            <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
-            <li class="menu-item"><a href="#" class="menu-link">Skills</a></li>
             <li class="menu-item">
-              <a href="#" class="menu-link">Projects</a>
+              <a href="#home" class="menu-link">Home</a></li>
+            <li class="menu-item">
+              <a href="#skills" class="menu-link">Skills</a></li>
+            <li class="menu-item">
+              <a href="#projects" class="menu-link">Projects</a>
             </li>
-            <li class="menu-item"><a href="#" class="menu-link">Contact</a></li>
-            <li class="menu-item"><a href="#" class="menu-link">Budget</a></li>
+            <li class="menu-item">
+              <a href="#contact" class="menu-link">Contact</a></li>
+            <li class="menu-item">
+              <a href="#budget" class="menu-link">Budget</a></li>
           </ul>
           <!--menu-->
         </nav>
 
         <div class="social-media">
-          <a href=""><i class="fab fa-github"></i></a>
-          <a href=""><i class="fab fa-linkedin-in"></i></a>
-          <a href=""><i class="fab fa-instagram"></i></a>
+          <a href="https://github.com/ighoreckert" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/ighor-eckert-9ba006177/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/ighoreckert/?hl=pt-br" target="_blank"><i class="fab fa-instagram"></i></a>
         </div>
         <!--social-media-->
       <aside >
@@ -78,7 +82,7 @@
 
       <!-- section.section-skills>(.section-header>h1)+.skills-known>(.skill>(.skill-header>i.fab+h3).skill-text>p{lorem30})*6 -->
 
-      <section class="section-skills">
+      <section class="section-skills" id="skills">
         <div class="section-header">
           <h1>Skills</h1>
         </div>
@@ -146,7 +150,7 @@
     </div><!--container-->
 
     <div class="container">
-      <section class="section-projects">
+      <section class="section-projects" id="projects">
         <div class="section-header">
           <h1>Projects</h1>
         </div><!--section-header-->
@@ -191,7 +195,7 @@
     </div><!--container-->
 
     <div class="container">
-      <section class="section-contact">
+      <section class="section-contact" id="contact">
         <div class="contact-wrapper">
           <div class="contact-left"></div><!--contact-left-->
           <div class="contact-right">
@@ -217,7 +221,7 @@
     </div><!--container-->
 
     <div class="container">
-      <section class="section-bugdet">
+      <section class="section-bugdet" id="budget">
         <div class="budget-wrapper">
           <h1>Make your budget</h1>
           <form>
@@ -240,6 +244,26 @@
           </form>
         </div><!--budget-wrapper-->
       </section><!--section-budget-->
+    </div><!--container-->
+
+    <div class="container">
+      <footer>
+        <div class="footer-content">
+          <p>
+            Copyright &copy; 2022, IE DEV - All rights reserved.
+          </p>
+          <div class="social-list">
+            <ul>
+              <li><a href="https://github.com/ighoreckert" target="_blank"><i class="fab fa-github"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/ighor-eckert-9ba006177/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+              <li><a href="https://www.instagram.com/ighoreckert/?hl=pt-br" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+          </div><!--social-list-->
+        </div><!--footer-content-->
+      </footer>
+      <a href="#home" id="link-top">
+        <i class="fas fa-arrow-up"></i>
+      </a>
     </div><!--container-->
   </body>
 

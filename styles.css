@@ -16,6 +16,10 @@
   --font-action: "Mulish", serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Menu */
 
 /* Burguer */
@@ -31,6 +35,7 @@
   flex-direction: column;
   justify-content: space-evenly;
   cursor: pointer;
+  z-index: 151;
 }
 
 .show-menu .burguer {
@@ -96,6 +101,7 @@
   top: 0;
   right: -20rem;
   transition: all 1s;
+  z-index: 150;
 }
 
 .show-menu .sidebar {
@@ -601,4 +607,57 @@ header {
   padding: 1rem;
   cursor: pointer;
   grid-column: 2;
+}
+
+/* End Budget Form */
+/*
+/* Footer */
+footer {
+  width: 100%;
+  height: 7rem;
+  background-color: #17191b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-content p {
+  font-family: var(--font-secundary);
+  color: #a7a7a7;
+  font-size: 1.2rem;
+}
+
+.social-list a {
+  margin: 0 2rem;
+  color: #a7a7a7;
+  font-size: 1.3rem;
+}
+
+.social-list ul {
+  display: flex;
+}
+
+/* Arrow to top */
+
+#link-top {
+  position: fixed;
+  right: 3rem;
+  bottom: 3rem;
+  width: 3rem;
+  height: 3rem;
+  background: #7f00ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #e100ff, #7f00ff);
+  background: linear-gradient(to right, #e100ff, #7f00ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 0.3rem;
+  box-shadow: 0 0.1rem 0.6rem #00000009;
 }
