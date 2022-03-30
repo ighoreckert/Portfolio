@@ -354,6 +354,7 @@ header {
 .projects {
   display: flex;
   justify-content: space-evenly;
+  margin-bottom: 2rem;
 }
 
 .card {
@@ -414,9 +415,7 @@ header {
   margin-bottom: 2rem;
 }
 
-.card-info button {
-  width: 8rem;
-  height: 2.5rem;
+.btn {
   background: #7f00ff; /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #e100ff, #7f00ff);
   background: linear-gradient(to right, #e100ff, #7f00ff);
@@ -428,8 +427,178 @@ header {
   border: none;
 }
 
+.card-info button {
+  width: 8rem;
+  height: 2.5rem;
+}
+
 .card:hover .card-info {
   bottom: 2rem;
   opacity: 1;
   visibility: visible;
+}
+
+/* End Projects */
+/* 
+/* Contact Form */
+
+.section-contact {
+  width: 100%;
+  height: 100vh;
+  background-color: #272727;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-wrapper {
+  width: 60%;
+  height: 30rem;
+  display: flex;
+  box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.5);
+}
+
+.contact-left {
+  width: 35%;
+  background: linear-gradient(rgba(15, 15, 15, 0.6), rgba(22, 22, 22, 0.9)),
+    url(images/contato.jpg);
+  background-size: cover;
+}
+
+.contact-right {
+  width: 65%;
+  background-color: #eee;
+  padding: 1rem 3rem 3rem 3rem;
+}
+
+.section-contact h1 {
+  width: 100%;
+  text-align: center;
+  font-family: var(--font-primary);
+  color: #272727;
+  font-size: 3rem;
+  font-weight: lighter;
+}
+
+.section-contact form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-group {
+  position: relative;
+}
+
+.field {
+  background: transparent;
+  border: none;
+  width: 20rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  font-family: var(--font-secundary);
+  border-bottom: 2px dashed #636363;
+  outline: none;
+  margin: 2rem 0;
+}
+
+.input-group textarea {
+  padding-top: 1rem;
+  resize: none;
+}
+
+.field-label {
+  position: absolute;
+  left: 0;
+  top: 3rem;
+  font-size: 1.2rem;
+  font-family: var(--font-secundary);
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+
+.field:focus ~ label {
+  top: 1rem;
+  font-size: 1rem;
+}
+
+.field:focus {
+  border-bottom: 1px solid;
+}
+
+.btn-submit {
+  text-transform: uppercase;
+  width: 65%;
+  height: 2rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* End Contact Form  */
+/* 
+/* Budget Form */
+
+.section-bugdet {
+  width: 100%;
+  height: 100vh;
+  background: url(images/bg-orcamento.jpg);
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.budget-wrapper {
+  width: 60%;
+  height: 80%;
+  background-color: #ffffff99;
+  border-radius: 10px;
+  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.section-bugdet h1 {
+  position: absolute;
+  top: -2.5rem;
+  left: 2rem;
+  background: #7f00ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #e100ff, #7f00ff);
+  background: linear-gradient(to right, #e100ff, #7f00ff);
+  padding: 0 3rem;
+  color: #fff;
+  font-family: var(--font-primary);
+  font-size: 3rem;
+  font-weight: lighter;
+  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.section-bugdet form {
+  margin: 4rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 2rem;
+  row-gap: 2rem;
+}
+
+.section-bugdet label {
+  font-family: var(--font-secundary);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.section-bugdet input[type="number"] {
+  font-family: var(--font-secundary);
+  width: 4rem;
+  font-size: 2rem;
+  outline: none;
+  border-radius: 10px;
+}
+
+.btn-budget {
+  text-transform: uppercase;
+  padding: 1rem;
+  cursor: pointer;
+  grid-column: 2;
 }

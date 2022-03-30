@@ -159,7 +159,7 @@
               <h2>ToDo List</h2>
               <h3>JavaScript</h3>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus similique pariatur esse officiis et debitis veniam nam iusto odio quibusdam.</p>
-              <button>Learn more</button>
+              <button class="btn">Learn more</button>
             </div><!--card-info-->
           </div><!--card-->
 
@@ -171,7 +171,7 @@
               <h2>RM Veículos</h2>
               <h3>HTML & CSS</h3>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus similique pariatur esse officiis et debitis veniam nam iusto odio quibusdam.</p>
-              <button>Learn more</button>
+              <button class="btn">Learn more</button>
             </div><!--card-info-->
           </div><!--card-->
 
@@ -183,11 +183,63 @@
               <h2>Landing Page</h2>
               <h3>HTML & CSS</h3>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus similique pariatur esse officiis et debitis veniam nam iusto odio quibusdam.</p>
-              <button>Learn more</button>
+              <button class="btn">Learn more</button>
             </div><!--card-info-->
           </div><!--card-->
         </div><!--projects-->
       </section><!--section-projects-->
+    </div><!--container-->
+
+    <div class="container">
+      <section class="section-contact">
+        <div class="contact-wrapper">
+          <div class="contact-left"></div><!--contact-left-->
+          <div class="contact-right">
+            <h1>Contact</h1>
+            <form>
+              <div class="input-group">
+                <input type="text" class="field" id="name">
+                <label for ="name" class="field-label">Name</label>
+              </div>
+              <div class="input-group">
+                <input type="text" class="field" id="email">
+                <label for="email" class="field-label">Email</label>
+              </div>
+              <div class="input-group">
+                <textarea class="field" id="message"></textarea>
+                <label for="message" class="field-label">Message</label>
+              </div>
+              <button type="submit" class="btn btn-submit">Send</button>
+            </form>
+          </div><!--contact-right-->
+        </div><!--contact-wrapper-->
+      </section><!--section-contact-->
+    </div><!--container-->
+
+    <div class="container">
+      <section class="section-bugdet">
+        <div class="budget-wrapper">
+          <h1>Make your budget</h1>
+          <form>
+            <label for="qnty">How many pages?</label>
+            <input type="number" min="1" name="qnty" id="qnty">
+            <label for="js">I need the JS script</label>
+            <input type="checkbox" name="js" id="js">
+            <label>Layout</label>
+            <div class="group-layout">
+              <div>
+                <input type="radio" name="layout" id="layout-yes">
+                <label for="layout-yes">I need a layout</label>
+                <input type="radio" name="layout" id="layout-no">
+                <label for="layout-no">I already have a layout</label>
+              </div>
+            </div><!--group-layout-->
+            <label for="deadline">Deadline</label>
+            <input type="range" name="deadline" id="deadline">
+            <button class="btn btn-budget" type="submit">Send</button>
+          </form>
+        </div><!--budget-wrapper-->
+      </section><!--section-budget-->
     </div><!--container-->
   </body>
 
