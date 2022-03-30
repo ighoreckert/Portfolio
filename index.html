@@ -44,11 +44,13 @@
         <div class="banner">
           <h1>Web Developer & Front End Designer</h1>
           <p>Ighor Eckert</p>
-          <button>Know more</button>
+          <form action="https://github.com/ighoreckert/Portfolio" method="get" target="_blank">
+            <button type="submit">Know more</button>
         </div>
         <!--banner-->
       </header>
 
+      <!-- Sidebar -->
       <aside class="sidebar">
         <nav>
           <ul class="menu">
@@ -78,14 +80,13 @@
     </div>
     <!--container-->
     
+    <!-- Skills -->
     <div class="container">
-
-      <!-- section.section-skills>(.section-header>h1)+.skills-known>(.skill>(.skill-header>i.fab+h3).skill-text>p{lorem30})*6 -->
-
       <section class="section-skills" id="skills">
         <div class="section-header">
           <h1>Skills</h1>
         </div>
+         <!-- section.section-skills>(.section-header>h1)+.skills-known>(.skill>(.skill-header>i.fab+h3).skill-text>p{lorem30})*6 -->
         <div class="skills-known">
           <div class="skill">
             <div class="skill-header">
@@ -149,6 +150,7 @@
       </section><!--section-skills-->
     </div><!--container-->
 
+    <!-- Projects -->
     <div class="container">
       <section class="section-projects" id="projects">
         <div class="section-header">
@@ -194,6 +196,7 @@
       </section><!--section-projects-->
     </div><!--container-->
 
+    <!-- Contact -->
     <div class="container">
       <section class="section-contact" id="contact">
         <div class="contact-wrapper">
@@ -220,6 +223,7 @@
       </section><!--section-contact-->
     </div><!--container-->
 
+    <!-- Budget -->
     <div class="container">
       <section class="section-bugdet" id="budget">
         <div class="budget-wrapper">
@@ -239,13 +243,15 @@
               </div>
             </div><!--group-layout-->
             <label for="deadline">Deadline</label>
-            <input type="range" name="deadline" id="deadline">
+            <input type="range" name="deadline" id="deadline" min="1" max="10">
+            <label id="price">R$0,00</label>
             <button class="btn btn-budget" type="submit">Send</button>
           </form>
         </div><!--budget-wrapper-->
       </section><!--section-budget-->
     </div><!--container-->
 
+    <!-- Footer -->
     <div class="container">
       <footer>
         <div class="footer-content">
